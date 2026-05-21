@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>محمد إياد - مودي</title>
+    <style>
+        /* إعدادات الصفحة الأساسية - خلفية بيضاء */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #ffffff;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+        /* تحويل الموقع إلى تصميم عرضي (جانبين) باستخدام نظام الجداول المتوافق */
+        .page-wrapper {
+            display: table;
+            width: 100%;
+            height: 100vh;
+            border-collapse: collapse;
+        }
+
+        /* القسم الجانبي الأيمن: الكرت الشخصي والصورة */
+        .sidebar {
+            display: table-cell;
+            width: 32%;
+            background-color: #f0f8ff; /* درجة ناعمة جداً من الأزرق السماوي للمطابقة */
+            border-left: 4px solid #00aeef; /* تحديد بلون أزرق سماوي أساسي */
+            vertical-align: middle;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .sidebar img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid #00aeef;
+            box-shadow: 0 8px 20px rgba(0, 174, 239, 0.2);
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h1 {
+            margin: 10px 0;
+            font-size: 2.2em;
+            color: #0084b4;
+        }
+
+        .sidebar .nickname {
+            font-size: 1.3em;
+            color: #00aeef;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        /* الأوسمة السريعة داخل السايدبار */
+        .tag-list {
+            padding: 0;
+            list-style: none;
+            display: block;
+            text-align: center;
+        }
+        .tag-item {
+            display: inline-block;
+            background-color: #00aeef;
+            color: #ffffff;
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        /* القسم الأيسر الرئيسي: المقال والبطاقات العرضية */
+        .main-content {
+            display: table-cell;
+            width: 68%;
+            vertical-align: top;
+            padding: 50px;
+            background-color: #ffffff;
+        }
+
+        .section-title {
+            color: #0084b4;
+            border-bottom: 3px solid #00aeef;
+            padding-bottom: 10px;
+            font-size: 1.8em;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        /* تنسيق المقال المطور */
+        .article-text p {
+            font-size: 1.15em;
+            color: #444444;
+            margin-bottom: 18px;
+            text-align: justify;
+        }
+
+        .highlight {
+            color: #00aeef;
+            font-weight: bold;
+        }
+
+        /* بطاقات معلوماتية مصفوفة بشكل عرضي */
+        .horizontal-cards {
+            display: table;
+            width: 100%;
+            margin-top: 35px;
+            border-spacing: 15px 0;
+        }
+
+        .info-card {
+            display: table-cell;
+            background-color: #f7fcff;
+            border: 1px solid #e1f3ff;
+            border-top: 4px solid #00aeef;
+            padding: 20px;
+            border-radius: 8px;
+            width: 33.333%;
+            text-align: center;
+            vertical-align: top;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.03);
+        }
+
+        .info-card h3 {
+            color: #0084b4;
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        .info-card p {
+            color: #666666;
+            font-size: 0.95em;
+            margin-bottom: 0;
+        }
+
+        /* التوافق مع الشاشات الصغيرة جداً لتتحول تلقائياً */
+        @media(max-width: 768px) {
+            .page-wrapper, .sidebar, .main-content, .horizontal-cards, .info-card {
+                display: block !important;
+                width: 100% !important;
+                height: auto !important;
+            }
+            .sidebar {
+                border-left: none;
+                border-bottom: 4px solid #00aeef;
+            }
+            .main-content {
+                padding: 20px;
+            }
+            .info-card {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-wrapper">
+        
+        <div class="sidebar">
+            <img src="10372.jpg" alt="محمد إياد">
+            <h1>محمد إياد</h1>
+            <div class="nickname">الأسطورة "مودي"</div>
+            
+            <div class="tag-list">
+                <span class="tag-item">🏃‍♂️ نشيط</span>
+                <span class="tag-item">🧭 مستكشف</span>
+                <span class="tag-item">🎮 لاعب محترف</span>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h2 class="section-title">السيرة الذاتية والشغف الإبداعي</h2>
+            
+            <div class="article-text">
+                <p>
+                    يمثل الصديق <span class="highlight">محمد إياد</span>، المشهور بين رفاقه بلقب "مودي"، نموذجاً متميزاً للشباب المليء بالحيوية والنشاط. يمتلك مودي روحاً استكشافية فريدة تدفعه دائماً نحو تجربة كل ما هو جديد ومبتكر، ولا يتوقف شغفه عند حدود معينة بل يمتد ليشمل بناء المهارات وتطوير الذات في مختلف المجالات الافتراضية والواقعية.
+                </p>
+                <p>
+                    تتجلى طبيعته كـ <span class="highlight">مستكشف طموح</span> في حبه العميق للتفاصيل؛ فهو لا يمر على الأشياء مرور الكرام، بل يسعى دوماً لفهم جوهرها وكيفية عملها. هذا الفضول المعرفي الإيجابي يمنحه قدرة سريعة على التأقلم وحل المشكلات، مما يجعله شخصية قيادية يعتمد عليها أصدقاؤه في الأوقات الحاسمة.
+                </p>
+                <p>
+                    في الميدان الرقمي، يبرز مودي كلاعب تكتيكي محترف في لعبة <span class="highlight">ببجي (PUBG)</span>، حيث يُعرف بدقة التخطيط وسرعة رد الفعل في المواجهات المباشرة، مما يضمن لفريقه دائماً الأفضلية في ساحة المعركة. بالتوازي مع ذلك، ينطلق خياله الهندسي في لعبة <span class="highlight">ماين كرافت (Minecraft)</span>، حيث يحول المكعبات البسيطة إلى قلاع وحصون ومشاريع إبداعية تعكس ذوقه الرفيع وقدرته العالية على التصميم والابتكار في وضع البقاء أو الإبداع.
+                </p>
+            </div>
+
+            <div class="horizontal-cards">
+                <div class="info-card">
+                    <h3>🧭 استكشاف وحركة</h3>
+                    <p>روح فضولية تعشق المغامرة واكتشاف الأسرار في العوالم الواقعية والافتراضية.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🎯 مهارة ببجي</h3>
+                    <p>قناص محترف وتكتيكي بارع يمتلك مهارة عالية في توجيه فريقه نحو النصر.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🧱 إبداع ماين كرافت</h3>
+                    <p>مبتكر في البناء واستغلال الموارد، يصنع تصاميم مذهلة تعبر عن خياله الواسع.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
